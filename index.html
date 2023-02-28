@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstrong num</title>
+	</head>
+	<body>
+		<script>
+		//armstrong num//
+let a = prompt("enter any number to check armstrong?");
+let b = a;
+let c = a;
+let sum=0;
+let i=0;
+
+while(c > 0){
+    c = parseInt(c/10);
+	i++;
+}
+
+while(b > 0){
+      n = b%10;
+      sum+=n**i;
+      temp = parseInt(b/10);
+}
+	  
+if(a == sum){
+     console.log(`${a} is an armstrong number`)
+}
+else{
+     	 
+	 console.log(`${a} is not an armstrong number`) 
+}
+
+	</script>
+   </body>
+   </html>
